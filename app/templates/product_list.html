@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Cards</title>
+    {% load static %}  <!-- Load the static template tag library -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <style>
+        /* Add styles for centering the title */
+        .title {
+            text-align: center; /* Center the text */
+            margin: 10px 0; /* Add some margin for spacing */
+            font-size: 24px; /* Adjust the font size as needed */
+            font-weight: bold; /* Make the title bold */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Shopify Products</h1>  
+        <div id="card-container" class="card-container">
+        </div>
+    </div>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
